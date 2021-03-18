@@ -1,0 +1,16 @@
+# Flask settings
+FLASK_SERVER_NAME = "localhost:8888"
+FLASK_DEBUG = True
+
+# Flask-Restplus settings
+RESTPLUS_SWAGGER_UI_DOC_EXPANSION = "list"
+RESTPLUS_VALIDATE = True
+RESTPLUS_MASK_SWAGGER = False
+RESTPLUS_ERROR_404_HELP = False
+
+# DB
+MONGODB_HOST = "localhost:27017"
+MONGODB_DB = "orders-db"
+MONGODB_USER = "dbUser"
+MONGODB_PASS = "dbPass"
+MONGODB_TIMEOUT = 2000
