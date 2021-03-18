@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  mongodb_container:
+    image: mongo:4.4
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: dbUser
+      MONGO_INITDB_ROOT_PASSWORD: dbPass
+      MONGO_INITDB_DATABASE: orders-db
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
